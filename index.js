@@ -1,9 +1,21 @@
 const Joi = require("joi");
+const logger = require("./logger");
+const helmet = require("helmet");
+const morgan = require("morgan");
+const config = require("config");
 const express = require("express");
 const app = express();
 
 app.use(express.json());
+app.use(helmet());
 
+console.log(`Application Name : ${config.get("name")} `);
+console.log(`Mail Name : ${config.get("mail.name")} `);
+console.log(`Password : ${config.get("mail.password")}`);
+app.use(morgan("tiny"));
+app.use(logger);
+
+app.use(express.static("public"));
 const genres = [
      {
           id: "1",
