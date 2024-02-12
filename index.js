@@ -5,6 +5,7 @@ const morgan = require("morgan");
 const config = require("config");
 const genres = require("./routes/genres");
 const home = require("./routes/home");
+const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
 app.set("view engine", "pug");
@@ -14,6 +15,12 @@ app.use(express.json());
 app.use(helmet());
 app.use("/api/genres", genres);
 app.use("/", home);
+
+mongoose
+     .connect("mongodb://localhost:27017/vidly")
+     .then(() => debug("Connected to MongoDB...."))
+     .catch(err => debug("Connection Failed : ", err));
+
 console.log(`Application Name : ${config.get("name")} `);
 // console.log(`Mail Name : ${config.get("mail.name")} `);
 // console.log(`Password : ${config.get("mail.password")}`);

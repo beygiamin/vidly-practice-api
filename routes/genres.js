@@ -1,61 +1,69 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const router = express.Router();
 const Joi = require("joi");
 
-router.get("/", (req, res) => {
+genresSchema = mongoose.Schema({
+     title: { type: String, required: true, minLength: 5, maxLength: 50 },
+});
+
+const Genre = mongoose.model("Genre", genresSchema);
+
+router.get("/", async (req, res) => {
+     const genres = await Genre.find().sort({ name: 1 });
+
      res.send(genres);
 });
 
-router.get("/:id", (req, res) => {
-     const genre = genres.find(it => req.params.id == it.id);
-     if (!genre)
-          res.status(404).send(
-               `Nothing Founded By The Given Id = ${req.params.id}`
-          );
-     else res.send(genre);
+router.get("/:id", async (req, res) => {
+     const genre = await Genre.findById(req.params.id);
+     if (!genre) {
+          return res
+               .status(404)
+               .send(`Nothing Founded By The Given Id = ${req.params.id}`);
+     } else {
+          res.send(genre);
+     }
 });
 
-router.post("/", (req, res) => {
+router.post("/", async (req, res) => {
      const { error } = validateReq(req.body);
 
      if (error) return res.status(400).send("fuck");
 
-     const genre = {
-          id: (genres.length + 1).toString(),
+     let genre = new Genre({
           title: req.body.title,
-     };
-     console.log(genre);
+     });
 
-     genres.push(genre);
+     genre = await genre.save();
+     res.send(genre);
+});
+
+router.put("/:id", async (req, res) => {
+     const { error } = validateReq(req.body);
+
+     if (error) return res.status(400).send("fuck");
+
+     const genre = await Genre.findByIdAndUpdate(
+          req.params.id,
+          {
+               title: req.body.title,
+          },
+          { new: true }
+     );
+
+     if (!genre) return res.status(404).send("Nothing on DB U ****");
 
      res.send(genre);
 });
-const genres = [
-     {
-          id: "1",
-          title: "Scary",
-     },
-     {
-          id: "2",
-          title: "Action",
-     },
-     {
-          id: "3",
-          title: "Sci-Fi",
-     },
-     {
-          id: "4",
-          title: "Fantasy",
-     },
-     {
-          id: "5",
-          title: "Romance",
-     },
-     {
-          id: "6",
-          title: "Comedy",
-     },
-];
+
+router.delete("/:id", async (req, res) => {
+     const genre = await Genre.findOneAndDelete(req.params.id);
+
+     if (!genre) return res.status(404).send("Nothing on DB U ****");
+
+     res.send(`Genre Deleted: ${genre}`);
+});
 
 function validateReq(request) {
      console.log(request);
