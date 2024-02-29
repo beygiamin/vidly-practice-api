@@ -1,20 +1,6 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const router = express.Router();
-const Joi = require("joi");
-
-moviesSchema = mongoose.Schema({
-     title: { type: String, required: true, maxLength: 50 },
-     genres: [
-          {
-               type: mongoose.Schema.Types.ObjectId,
-               required: true,
-               ref: "Genre",
-          },
-     ],
-});
-
-const Movie = mongoose.model("Movie", moviesSchema);
+const { Movie, validate } = require("../models/Movie");
 
 router.get("/", async (req, res) => {
      const movies = await Movie.find()
@@ -37,7 +23,7 @@ router.get("/:id", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-     const { error } = validateReq(req.body);
+     const { error } = validate(req.body);
 
      if (error) return res.status(400).send("fuck");
 
@@ -51,7 +37,7 @@ router.post("/", async (req, res) => {
 });
 
 router.put("/:id", async (req, res) => {
-     const { error } = validateReq(req.body);
+     const { error } = validate(req.body);
 
      if (error) return res.status(400).send("fuck");
 
@@ -76,15 +62,5 @@ router.delete("/:id", async (req, res) => {
 
      res.send(`Movie Deleted: ${movie}`);
 });
-
-function validateReq(request) {
-     console.log(request);
-     const schema = Joi.object({
-          title: Joi.string().min(3).required(),
-          genres: Joi.array().min(1).required(),
-     });
-
-     return schema.validate(request);
-}
 
 module.exports = router;
