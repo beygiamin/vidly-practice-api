@@ -28,8 +28,8 @@ router.post("/", async (req, res) => {
      let rental = new Rental({
           customer: {
                _id: customer._id,
-               name: customer.firstname + " " + customer.lastname,
-               phoneNumber: customer.phoneNumber,
+               name: customer.name,
+               phone: customer.phone,
           },
           movie: {
                _id: movie._id,

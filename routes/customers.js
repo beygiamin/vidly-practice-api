@@ -25,10 +25,9 @@ router.post("/", async (req, res) => {
      if (error) return res.status(400).send("Data Not Valid");
 
      let customer = new Customer({
-          firstname: req.body.firstname,
-          lastname: req.body.lastname,
-          subscribtionPlan: req.body.subscribtionPlan,
-          phoneNumber: req.body.phoneNumber,
+          name: req.body.name,
+          isGold: req.body.isGold,
+          phone: req.body.phone,
      });
 
      customer = await customer.save();
@@ -43,10 +42,9 @@ router.put("/:id", async (req, res) => {
      const customer = await Customer.findByIdAndUpdate(
           req.params.id,
           {
-               firstname: req.body.firstname,
-               lastname: req.body.lastname,
-               subscribtionPlan: req.body.subscribtionPlan,
-               phoneNumber: req.body.phoneNumber,
+               name: req.body.name,
+               isGold: req.body.isGold,
+               phone: req.body.phone,
           },
           { new: true }
      );

@@ -11,7 +11,7 @@ const rentalSchema = new mongoose.Schema({
                     minlength: 5,
                     maxlength: 50,
                },
-               phoneNumber: {
+               phone: {
                     type: String,
                     required: true,
                     minlength: 11,

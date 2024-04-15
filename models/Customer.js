@@ -2,19 +2,21 @@ const mongoose = require("mongoose");
 const Joi = require("joi");
 
 const customerSchema = mongoose.Schema({
-     firstname: { type: String, required: true, minLength: 1, maxLength: 50 },
-     lastname: { type: String, required: true, minLength: 1, maxLength: 50 },
-     subscribtionPlan: {
+     name: {
           type: String,
-          enum: ["free", "gold", "red"],
           required: true,
+          minlength: 5,
+          maxlength: 50,
      },
-     phoneNumber: {
+     isGold: {
+          type: Boolean,
+          default: false,
+     },
+     phone: {
           type: String,
           required: true,
-          minlength: 11,
-          maxlength: 11,
-          trim: true,
+          minlength: 5,
+          maxlength: 50,
      },
 });
 const Customer = mongoose.model("Customer", customerSchema);
@@ -22,10 +24,9 @@ const Customer = mongoose.model("Customer", customerSchema);
 function validateCustomer(request) {
      console.log(request);
      const schema = Joi.object({
-          firstname: Joi.string().min(3).required(),
-          lastname: Joi.string().min(3).required(),
-          phoneNumber: Joi.string().trim().min(11).max(11).required(),
-          subscribtionPlan: Joi.string().valid("free", "gold", "red"),
+          name: Joi.string().min(5).max(50).required(),
+          phone: Joi.string().min(5).max(50).required(),
+          isGold: Joi.boolean(),
      });
 
      return schema.validate(request);

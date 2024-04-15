@@ -9,7 +9,7 @@ const config = require("config");
 const genres = require("./routes/genres");
 const movies = require("./routes/movies");
 const rentals = require("./routes/rentals");
-
+const users = require("./routes/users");
 const customers = require("./routes/customers");
 const home = require("./routes/home");
 const mongoose = require("mongoose");
@@ -27,11 +27,12 @@ app.use("/api/genres", genres);
 app.use("/api/movies", movies);
 app.use("/api/customers", customers);
 app.use("/api/rentals", rentals);
+app.use("/api/users", users);
 
 mongoose
      .connect("mongodb://localhost:27017/vidly")
-     .then(() => debug("Connected to MongoDB...."))
-     .catch(err => debug("Connection Failed : ", err));
+     .then(() => console.log("Connected to MongoDB...."))
+     .catch(err => console.log("Connection Failed : ", err));
 
 console.log(`Application Name : ${config.get("name")} `);
 // console.log(`Mail Name : ${config.get("mail.name")} `);
