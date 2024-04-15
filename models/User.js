@@ -29,7 +29,6 @@ const User = mongoose.model(
 exports.User = User;
 
 function validateReq(request) {
-     console.log(request);
      const schema = Joi.object({
           name: Joi.string().min(2).max(50).required(),
           email: Joi.string().min(5).max(255).required().email(),

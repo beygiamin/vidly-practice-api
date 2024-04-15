@@ -8,7 +8,6 @@ const Genre = mongoose.model("Genre", genresSchema);
 exports.Genre = Genre;
 
 function validateReq(request) {
-     console.log(request);
      const schema = Joi.object({
           title: Joi.string().min(3).required(),
      });
