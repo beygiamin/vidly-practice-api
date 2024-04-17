@@ -31,6 +31,10 @@ app.use("/api/rentals", rentals);
 app.use("/api/users", users);
 app.use("/api/auth", auth);
 
+if (!config.get("jwtPrivateKey")) {
+     console.log("Err: JWT Private key is not defined");
+     process.exit(1);
+}
 mongoose
      .connect("mongodb://localhost:27017/vidly")
      .then(() => console.log("Connected to MongoDB...."))

@@ -1,5 +1,6 @@
 const Joi = require("joi");
 const bcrypt = require("bcrypt");
+
 const { User } = require("../models/User");
 const express = require("express");
 const router = express.Router();
@@ -18,16 +19,17 @@ router.post("/", async (req, res) => {
      if (!validPassword)
           return res.status(400).send("Invalid email or password.");
 
-     res.send(true);
+     const token = user.genAuthToken();
+     res.send(token);
 });
 
 function validate(req) {
-     const schema = {
+     const schema = Joi.object({
           email: Joi.string().min(5).max(255).required().email(),
           password: Joi.string().min(5).max(255).required(),
-     };
+     });
 
-     return Joi.validate(req, schema);
+     return schema.validate(req);
 }
 
 module.exports = router;

@@ -1,3 +1,4 @@
 {
-     "name": "Default Api Config"
+     "name": "Default Api Config",
+     "jwtPrivateKey": ""
 }
