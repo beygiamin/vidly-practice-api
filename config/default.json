@@ -1,4 +1,5 @@
 {
      "name": "Default Api Config",
-     "jwtPrivateKey": ""
+     "jwtPrivateKey": "",
+     "dbpassword": ""
 }

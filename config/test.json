@@ -1,0 +1,5 @@
+{
+     "name": "Test Api Config",
+     "jwtPrivateKey": "1234",
+     "dbpassword": "1234"
+}
