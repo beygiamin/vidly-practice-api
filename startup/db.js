@@ -2,8 +2,15 @@ const mongoose = require("mongoose");
 const winston = require("winston");
 const config = require("config");
 
-const dbpassword = config.get("dbPassword");
-const uri = `mongodb+srv://dbUserAdmin:${dbpassword}@atlascluster.mnjkxhf.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster`;
+let dbpassword = config.get("db.password");
+if (typeof dbpassword == "string") {
+     dbpassword = dbpassword.replace("@", "%40");
+}
+
+let uri = config.get("db.address");
+if (typeof uri === "string") {
+     uri = uri.replace("dbpassword", dbpassword);
+}
 const clientOptions = {
      serverApi: { version: "1", strict: true, deprecationErrors: true },
 };

@@ -1,5 +1,8 @@
 {
      "name": "Default Api Config",
      "jwtPrivateKey": "",
-     "dbpassword": ""
+     "db": {
+          "password": "",
+          "address": "mongodb+srv://dbUserAdmin:dbpassword@atlascluster.mnjkxhf.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster"
+     }
 }

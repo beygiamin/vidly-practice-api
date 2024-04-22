@@ -1,5 +1,5 @@
 const config = require("config");
-const dbpassword = config.get("dbPassword");
+const dbpassword = config.get("db.password");
 
 module.exports = function () {
      if (!config.get("jwtPrivateKey")) {

@@ -3,5 +3,7 @@
           "password": "app_password"
      },
      "jwtPrivateKey": "vidly_jwtPrivateKey",
-     "dbPassword": "vidly_dbPassword"
+     "db": {
+          "password": "vidly_dbPassword"
+     }
 }
