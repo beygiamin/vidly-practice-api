@@ -1,0 +1,181 @@
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genre\" Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genre\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genre\"\n    at SchemaObjectId.Object.<anonymous>.SchemaObjectId.cast (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.applySetters (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\schemaType.js:1221:12)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.castForQuery (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\schemaType.js:1636:17)\n    at cast (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\cast.js:375:32)\n    at model.Query.Object.<anonymous>.Query.cast (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:4746:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:2200:10)\n    at model.Query._findOneAndUpdate (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:3242:8)\n    at model.Query.exec (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:4290:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\routes\\genres.js:42:20","stringValue":"\"1\"","value":"1","valueType":"string"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genre\" Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genre\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genre\"\n    at SchemaObjectId.Object.<anonymous>.SchemaObjectId.cast (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.applySetters (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\schemaType.js:1221:12)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.castForQuery (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\schemaType.js:1636:17)\n    at cast (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\cast.js:375:32)\n    at model.Query.Object.<anonymous>.Query.cast (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:4746:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:2200:10)\n    at model.Query._findOneAndUpdate (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:3242:8)\n    at model.Query.exec (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:4290:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\routes\\genres.js:42:20","stringValue":"\"1\"","value":"1","valueType":"string"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genre\" Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genre\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genre\"\n    at SchemaObjectId.Object.<anonymous>.SchemaObjectId.cast (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.applySetters (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\schemaType.js:1221:12)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.castForQuery (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\schemaType.js:1636:17)\n    at cast (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\cast.js:375:32)\n    at model.Query.Object.<anonymous>.Query.cast (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:4746:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:2200:10)\n    at model.Query._findOneAndUpdate (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:3242:8)\n    at model.Query.exec (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\node_modules\\mongoose\\lib\\query.js:4290:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\routes\\genres.js:42:20","stringValue":"\"1\"","value":"1","valueType":"string"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"date":"Tue Apr 23 2024 15:46:19 GMT+0330 (Iran Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: FATAL ERROR : JWT KEY IS NOT DEFINED\nError: FATAL ERROR : JWT KEY IS NOT DEFINED\n    at module.exports (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\startup\\config.js:6:17)\n    at Object.<anonymous> (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js:10:28)\n    at Module._compile (node:internal/modules/cjs/loader:1256:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)\n    at Module.load (node:internal/modules/cjs/loader:1119:32)\n    at Module._load (node:internal/modules/cjs/loader:960:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:86:12)\n    at node:internal/main/run_main_module:23:47","os":{"loadavg":[0,0,0],"uptime":170135.296},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js"],"cwd":"C:\\Users\\Irani Expert\\Documents\\vidly-practice-api","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":291343,"external":1061663,"heapTotal":19333120,"heapUsed":14678944,"rss":50733056},"pid":15076,"uid":null,"version":"v18.18.2"},"stack":"Error: FATAL ERROR : JWT KEY IS NOT DEFINED\n    at module.exports (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\startup\\config.js:6:17)\n    at Object.<anonymous> (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js:10:28)\n    at Module._compile (node:internal/modules/cjs/loader:1256:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)\n    at Module.load (node:internal/modules/cjs/loader:1119:32)\n    at Module._load (node:internal/modules/cjs/loader:960:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:86:12)\n    at node:internal/main/run_main_module:23:47","trace":[{"column":17,"file":"C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\startup\\config.js","function":"module.exports","line":6,"method":"exports","native":false},{"column":28,"file":"C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1256,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1310,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1119,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":960,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":86,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":23,"method":null,"native":false}]}
+{"date":"Tue Apr 23 2024 15:47:02 GMT+0330 (Iran Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: FATAL ERROR : JWT KEY IS NOT DEFINED\nError: FATAL ERROR : JWT KEY IS NOT DEFINED\n    at module.exports (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\startup\\config.js:6:17)\n    at Object.<anonymous> (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js:10:28)\n    at Module._compile (node:internal/modules/cjs/loader:1256:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)\n    at Module.load (node:internal/modules/cjs/loader:1119:32)\n    at Module._load (node:internal/modules/cjs/loader:960:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:86:12)\n    at node:internal/main/run_main_module:23:47","os":{"loadavg":[0,0,0],"uptime":170178.25},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js"],"cwd":"C:\\Users\\Irani Expert\\Documents\\vidly-practice-api","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":291343,"external":1061663,"heapTotal":19595264,"heapUsed":14555952,"rss":50573312},"pid":9560,"uid":null,"version":"v18.18.2"},"stack":"Error: FATAL ERROR : JWT KEY IS NOT DEFINED\n    at module.exports (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\startup\\config.js:6:17)\n    at Object.<anonymous> (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js:10:28)\n    at Module._compile (node:internal/modules/cjs/loader:1256:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)\n    at Module.load (node:internal/modules/cjs/loader:1119:32)\n    at Module._load (node:internal/modules/cjs/loader:960:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:86:12)\n    at node:internal/main/run_main_module:23:47","trace":[{"column":17,"file":"C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\startup\\config.js","function":"module.exports","line":6,"method":"exports","native":false},{"column":28,"file":"C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1256,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1310,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1119,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":960,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":86,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":23,"method":null,"native":false}]}
+{"date":"Tue Apr 23 2024 15:47:21 GMT+0330 (Iran Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: FATAL ERROR : JWT KEY IS NOT DEFINED\nError: FATAL ERROR : JWT KEY IS NOT DEFINED\n    at module.exports (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\startup\\config.js:6:17)\n    at Object.<anonymous> (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js:8:28)\n    at Module._compile (node:internal/modules/cjs/loader:1256:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)\n    at Module.load (node:internal/modules/cjs/loader:1119:32)\n    at Module._load (node:internal/modules/cjs/loader:960:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:86:12)\n    at node:internal/main/run_main_module:23:47","os":{"loadavg":[0,0,0],"uptime":170197},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js"],"cwd":"C:\\Users\\Irani Expert\\Documents\\vidly-practice-api","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":291343,"external":1060501,"heapTotal":19333120,"heapUsed":14623648,"rss":50913280},"pid":17768,"uid":null,"version":"v18.18.2"},"stack":"Error: FATAL ERROR : JWT KEY IS NOT DEFINED\n    at module.exports (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\startup\\config.js:6:17)\n    at Object.<anonymous> (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js:8:28)\n    at Module._compile (node:internal/modules/cjs/loader:1256:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)\n    at Module.load (node:internal/modules/cjs/loader:1119:32)\n    at Module._load (node:internal/modules/cjs/loader:960:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:86:12)\n    at node:internal/main/run_main_module:23:47","trace":[{"column":17,"file":"C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\startup\\config.js","function":"module.exports","line":6,"method":"exports","native":false},{"column":28,"file":"C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1256,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1310,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1119,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":960,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":86,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":23,"method":null,"native":false}]}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"error","message":"winston.log is not a function winston.log is not a function","stack":"TypeError: winston.log is not a function\n    at log (C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\routes\\genres.js:58:14)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"error","message":"[object Object] [object Object]","stack":"Error: [object Object]\n    at C:\\Users\\Irani Expert\\Documents\\vidly-practice-api\\routes\\genres.js:58:12\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}
+{"level":"info","message":"I am Listening On Port 3000"}
+{"level":"info","message":"Connected To Database ..."}

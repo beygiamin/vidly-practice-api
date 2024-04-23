@@ -7,12 +7,11 @@ const customers = require("../routes/customers");
 const home = require("../routes/home");
 const errorHandler = require("../middleware/error");
 const express = require("express");
-const logger = require("../middleware/logger");
 const helmet = require("helmet");
 
 module.exports = function (app) {
      app.use(express.json());
-     app.use(logger);
+
      app.use("/", home);
      app.use("/api/genres", genres);
      app.use("/api/movies", movies);

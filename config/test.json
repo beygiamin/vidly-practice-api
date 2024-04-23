@@ -3,6 +3,6 @@
      "jwtPrivateKey": "1234",
      "db": {
           "password": "1TrKJZEyP2I8sloF",
-          "address": "mongodb+srv://dbTestUser:dbpassword@atlascluster.mnjkxhf.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster"
+          "address": "mongodb+srv://dbTestUser:dbpassword@atlascluster.mnjkxhf.mongodb.net/test?retryWrites=true&w=majority&appName=AtlasCluster"
      }
 }

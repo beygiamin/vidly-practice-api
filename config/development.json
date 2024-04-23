@@ -1,6 +1,11 @@
 {
      "name": "Development Api Config",
+     "jwtPrivateKey": "secureToken",
      "mail": {
           "name": "Development@mail.com"
+     },
+     "db": {
+          "password": "1TrKJZEyP2I8sloF",
+          "address": "mongodb+srv://dbTestUser:dbpassword@atlascluster.mnjkxhf.mongodb.net/dev?retryWrites=true&w=majority&appName=AtlasCluster"
      }
 }
