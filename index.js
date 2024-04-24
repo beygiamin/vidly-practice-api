@@ -1,6 +1,8 @@
 const debug = require("debug")("app:debug");
 const morgan = require("morgan");
 const winston = require("winston");
+const config = require("config");
+
 const express = require("express");
 const app = express();
 
@@ -19,7 +21,7 @@ if (app.get("env") == "development") {
      debug("Morgan Is Running");
 }
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || config.get("port");
 const server = app.listen(port, () => {
      winston.info(`I am Listening On Port ${port}`);
 });
