@@ -2,8 +2,9 @@ const request = require("supertest");
 const { Genre } = require("../../../models/Genre");
 const { User } = require("../../../models/User");
 const mongoose = require("mongoose");
-let server;
+
 describe("/api/genres", () => {
+     let server;
      beforeEach(() => {
           server = require("../../../index");
      });
@@ -11,7 +12,7 @@ describe("/api/genres", () => {
           await server.close();
           await Genre.deleteMany({});
      });
-
+     afterAll(async () => {});
      describe("GET /", () => {
           it("should return all genres", async () => {
                const genres = [{ title: "genre1" }, { title: "genre2" }];

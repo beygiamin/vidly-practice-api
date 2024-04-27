@@ -1,18 +1,19 @@
 const { User } = require("../../../models/User");
 const { Genre } = require("../../../models/Genre");
 const request = require("supertest");
-let token;
-let server;
+
 describe("auth middleware", () => {
+     let server;
+     let token;
      beforeEach(() => {
           server = require("../../../index");
           token = new User().genAuthToken();
      });
      afterEach(async () => {
           await server.close();
+
           await Genre.deleteMany({});
      });
-
      const exec = () => {
           return request(server)
                .post("/api/genres")

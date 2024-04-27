@@ -5,13 +5,13 @@ const users = require("../routes/users");
 const auth = require("../routes/auth");
 const customers = require("../routes/customers");
 const home = require("../routes/home");
+const returns = require("../routes/returns");
 const errorHandler = require("../middleware/error");
 const express = require("express");
 const helmet = require("helmet");
 
 module.exports = function (app) {
      app.use(express.json());
-
      app.use("/", home);
      app.use("/api/genres", genres);
      app.use("/api/movies", movies);
@@ -19,6 +19,7 @@ module.exports = function (app) {
      app.use("/api/rentals", rentals);
      app.use("/api/users", users);
      app.use("/api/auth", auth);
+     app.use("/api/returns", returns);
      app.use(errorHandler);
      app.use(helmet());
 };
