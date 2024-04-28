@@ -3,11 +3,26 @@ const router = express.Router();
 const auth = require("../middleware/auth");
 const validateObjectId = require("../middleware/valiator-obj-id");
 const { Genre, validate } = require("../models/Genre");
-const winston = require("winston/lib/winston/config");
+
+/**
+ * @swagger
+ * /api/genres/:
+ *   get:
+ *     tags: [Genres]
+ *     responses:
+ *       200:
+ *         description: Successful response
+ *         content:
+ *           application/json:
+ *             example:
+ *               data: [ {
+    "_id": "string",
+    "title": "string"
+  }]
+ */
 
 router.get("/", async (req, res) => {
      const genres = await Genre.find().sort({ name: 1 }).select("-__v");
-
      res.send(genres);
 });
 

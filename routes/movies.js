@@ -2,6 +2,13 @@ const express = require("express");
 const router = express.Router();
 const { Movie, validate } = require("../models/Movie");
 
+/**
+ * @swagger
+ * /api/movies:
+ *   get:
+ *     tags: [Movies]
+ */
+
 router.get("/", async (req, res) => {
      const movies = await Movie.find()
           .populate("genres", "title -_id")
