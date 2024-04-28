@@ -4,6 +4,7 @@
      "description": "",
      "main": "index.js",
      "scripts": {
+          "start": "node index.js",
           "test": "jest --watchAll --verbose -t /api/returns",
           "test-coverage": "jest --watchAll --verbose --coverage"
      },
