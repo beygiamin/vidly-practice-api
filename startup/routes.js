@@ -8,7 +8,6 @@ const home = require("../routes/home");
 const returns = require("../routes/returns");
 const errorHandler = require("../middleware/error");
 const express = require("express");
-const helmet = require("helmet");
 
 module.exports = function (app) {
      app.use(express.json());
@@ -21,5 +20,4 @@ module.exports = function (app) {
      app.use("/api/auth", auth);
      app.use("/api/returns", returns);
      app.use(errorHandler);
-     app.use(helmet());
 };
