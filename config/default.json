@@ -4,6 +4,6 @@
      "port": "3000",
      "db": {
           "password": "",
-          "address": "mongodb+srv://dbUserAdmin:dbpassword@atlascluster.mnjkxhf.mongodb.net/vidly?retryWrites=true&w=majority&appName=AtlasCluster"
+          "address": ""
      }
 }
