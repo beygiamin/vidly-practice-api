@@ -12,7 +12,6 @@ describe("/api/genres", () => {
           await server.close();
           await Genre.deleteMany({});
      });
-     afterAll(async () => {});
      describe("GET /", () => {
           it("should return all genres", async () => {
                const genres = [{ title: "genre1" }, { title: "genre2" }];

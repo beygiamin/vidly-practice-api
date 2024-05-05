@@ -4,30 +4,18 @@ const { User, validate } = require("../models/User");
 const _ = require("lodash");
 const passwordComplexity = require("joi-password-complexity");
 const bcrypt = require("bcrypt");
-// router.get("/", async (req, res) => {
-//      const genres = await Genre.find().sort({ name: 1 });
+const auth = require("../middleware/auth");
+const validateReq = require("../middleware/validate-req");
+router.get("/me", auth, async (req, res) => {
+     const user = await User.findById(req.user._id).select("-password");
+     res.send(user);
+});
 
-//      res.send(genres);
-// });
-
-// router.get("/:id", async (req, res) => {
-//      const genre = await Genre.findById(req.params.id);
-//      if (!genre) {
-//           return res
-//                .status(404)
-//                .send(`Nothing Founded By The Given Id = ${req.params.id}`);
-//      } else {
-//           res.send(genre);
-//      }
-// });
-
-router.post("/", async (req, res) => {
-     const { error } = validate(req.body);
-     if (error) return res.status(400).send(error.details[0].message);
-
+router.post("/", validateReq(validate), async (req, res) => {
      const passValid = passwordComplexity().validate(req.body.password);
-     if (passValid.error)
+     if (passValid.error) {
           return res.status(400).send("Password not Complex Enough");
+     }
 
      let user = await User.findOne({ email: req.body.email });
      if (user) return res.status(400).send("User already registered.");
@@ -41,31 +29,5 @@ router.post("/", async (req, res) => {
      const token = user.genAuthToken();
      res.header("x-auth-token", token).send(_.pick(user, ["name", "email"]));
 });
-
-// router.put("/:id", async (req, res) => {
-//      const { error } = validate(req.body);
-
-//      if (error) return res.status(400).send("fuck");
-
-//      const genre = await Genre.findByIdAndUpdate(
-//           req.params.id,
-//           {
-//                title: req.body.title,
-//           },
-//           { new: true }
-//      );
-
-//      if (!genre) return res.status(404).send("Nothing on DB U ****");
-
-//      res.send(genre);
-// });
-
-// router.delete("/:id", async (req, res) => {
-//      const genre = await Genre.findOneAndDelete(req.params.id);
-
-//      if (!genre) return res.status(404).send("Nothing on DB U ****");
-
-//      res.send(`Genre Deleted: ${genre}`);
-// });
 
 module.exports = router;

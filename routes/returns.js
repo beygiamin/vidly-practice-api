@@ -15,10 +15,7 @@ const validateReq = require("../middleware/validate-req");
 
 //
 router.post("/", [auth, validateReq(validate)], async (req, res) => {
-     const rental = await Rental.findOne({
-          "customer._id": req.body.customerId,
-          "movie._id": req.body.movieId,
-     });
+     const rental = await Rental.lookup(req.body.customerId, req.body.movieId);
      if (!rental)
           return res.status(404).send("rental with given ids not found");
 
@@ -27,11 +24,10 @@ router.post("/", [auth, validateReq(validate)], async (req, res) => {
 
      rental.dateReturned = new Date();
 
-     const rentalDays = moment().diff(rental.dateOut, "days");
-     rental.rentalFee = rentalDays * rental.movie.dailyRentalRate;
+     rental.return();
      await rental.save();
 
-     return res.status(200).send(rental);
+     return res.send(rental);
 });
 
 module.exports = router;
