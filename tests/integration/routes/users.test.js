@@ -1,25 +1,23 @@
 const { User } = require("../../../models/User");
 const request = require("supertest");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 
 describe("api/users", () => {
-     let server;
+     let server, user;
      beforeEach(() => {
           server = require("../../../index");
-     });
+          user = {
+               name: "user",
+               email: "user@gmail.com",
+               password: "12345User?", // Password Complexity
+          };
+     }, 7000);
      afterEach(async () => {
           await server.close();
           await User.deleteMany({});
      });
      describe("POST", () => {
-          let user;
-          beforeEach(() => {
-               user = {
-                    name: "user",
-                    email: "user@gmail.com",
-                    password: "12345User?", // Password Complexity
-               };
-          }, 10000);
           const exec = async () => {
                return await request(server).post("/api/users").send(user);
           };
@@ -72,6 +70,39 @@ describe("api/users", () => {
           });
 
           it("should return 200 and user if request is valid", async () => {
+               const res = await exec();
+               expect(res.status).toBe(200);
+               expect(res.body).toHaveProperty("name", user.name);
+               expect(res.body).toHaveProperty("email", user.email);
+          });
+     });
+
+     describe("GET /me", () => {
+          let token;
+          beforeEach(async () => {
+               user = new User(user);
+               await user.save();
+               token = user.genAuthToken();
+          });
+          const exec = () => {
+               return request(server)
+                    .get("/api/users/me")
+                    .set("x-auth-token", token);
+          };
+
+          it("should return 401 if user not logged in", async () => {
+               token = "";
+               const res = await exec();
+               expect(res.status).toBe(401);
+          });
+
+          it("should return 400 if token is invalid", async () => {
+               token = jwt.sign("a", "b");
+               const res = await exec();
+               expect(res.status).toBe(400);
+          });
+
+          it("should return user if token is valid", async () => {
                const res = await exec();
                expect(res.status).toBe(200);
                expect(res.body).toHaveProperty("name", user.name);

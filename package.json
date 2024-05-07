@@ -6,7 +6,7 @@
      "scripts": {
           "start": "node index.js",
           "test": "jest --watchAll --verbose -t api/users",
-          "test-coverage": "jest --watchAll --verbose --coverage"
+          "test-coverage": "jest --verbose --coverage"
      },
      "engines": {
           "node": "18.x"
